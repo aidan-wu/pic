@@ -6,10 +6,14 @@ import { FooterComponent } from './footer/footer.component';
 import { Router, RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import {routing} from '../app-routing.module';
+import {
+  MatIconModule,
+  MatBadgeModule,
+} from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule, routing, RouterModule
+    CommonModule, routing, RouterModule,  MatIconModule, MatBadgeModule
   ],
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   exports: [LayoutComponent]

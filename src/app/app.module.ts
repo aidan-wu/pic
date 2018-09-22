@@ -24,6 +24,84 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router, RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import {routing} from './app-routing.module';
+import {CdkTableModule} from '@angular/cdk/table';
+
+import {
+  MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatStepperModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatBadgeModule,
+} from '@angular/material';
+
+
+@NgModule({
+  exports: [
+    CdkTableModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatBadgeModule,
+  ]
+})
+export class DemoMaterialModule {}
 
 
 @NgModule({
@@ -48,6 +126,8 @@ import {routing} from './app-routing.module';
     BrowserAnimationsModule,
     UiModule,
     ReactiveFormsModule,
+    DemoMaterialModule,
+    MatNativeDateModule,
     FormsModule,
     NgbModule.forRoot()
   ],
@@ -62,7 +142,10 @@ import {routing} from './app-routing.module';
     // provider used to create fake backend
     fakeBackendProvider
   ],
-  bootstrap: [AppComponent]
+
+  entryComponents: [AppComponent],
+  bootstrap: [AppComponent],
+ // bootstrap: [AppComponent]
 })
 export class AppModule {
 
