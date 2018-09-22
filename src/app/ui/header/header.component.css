@@ -1,3 +1,14 @@
 .bg-green {
-  background-color: #20c063 !important;
+  background-color: #0000A0 !important;
+}
+
+
+.bg-db {
+  background-color: #66668c !important;
+  color: white;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  text-decoration: none;
+  color: white;
 }
