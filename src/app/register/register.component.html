@@ -1,6 +1,8 @@
 ﻿<div class="mat-app-background basic-container">
 
 <h3>Linear Vertical Stepper Demo using a single form</h3>
+
+<br/><br/><br/><br/>
 <form [formGroup]="formGroup">
   <mat-vertical-stepper #linearVerticalStepper="matVerticalStepper" formArrayName="formArray" [linear]="false">
     <mat-step formGroupName="0" [stepControl]="formArray?.get([0])">
@@ -201,4 +203,5 @@
 </form>
 
 </div>
+
 
